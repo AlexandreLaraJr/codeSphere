@@ -1,197 +1,104 @@
-import pencil from "./assets/icons/pencil.svg";
-import lamp from "./assets/icons/lamp.svg";
-import trophy from "./assets/icons/trophy.svg";
-import exclamation from "./assets/icons/exclamation.svg";
-import flag from "./assets/icons/flag.svg";
-import handshake from "./assets/icons/handshake.svg";
-import passionVisibility from "./assets/icons/passionVisibility.svg";
+import Header from "./components/Header";
+import Home from "./components/Home";
+import About from "./components/About";
+import Services from "./components/Services";
+import Porfolio from "./components/Portfolio";
+import Clients from "./components/Clients";
+import facebook from "./assets/icons/facebook.svg";
+import instagram from "./assets/icons/instagram.svg";
+import whatsapp from "./assets/icons/whatsapp.svg";
 
 export default function App() {
     return (
-        <div className="border-2 h-screen w-screen">
-            <header className="bg-green-500 flex flex-row mx-auto items-center justify-evenly h-20 mt-10  w-11/12 rounded-full">
-                <div className="text-4xl font-bold ml-12">Dads</div>
-                <ul className="flex flex-row justify-evenly ml-auto w-2/6 text-white">
-                    {/* <li>
-                        <a className="text-white">HOME</a>
-                      </li> */}
-                    <li>
-                        <a href="#about" className="text-white cursor-pointer">
-                            Sobre
-                        </a>
-                    </li>
-                    <li>
-                        <a
-                            className="text-white cursor-pointer"
-                            href="#services"
-                        >
-                            Serviços
-                        </a>
-                    </li>
-                    <li>
-                        <a className="text-white cursor-pointer">Portfólio</a>
-                    </li>
-                    <li>
-                        <a className="text-white cursor-pointer">Clientes</a>
-                    </li>
-                </ul>
-                <button className="rounded-full border-2 border-green-600 -ml-4 mr-8 bg-gradient-to-r  from-blue-500 to-green-500 text-white font-bold   animate-pulse px-6">
-                    Contato
-                </button>
-            </header>
-            <main>
-                <div className=" w-full h-auto flex flex-col  mt-72 mb-96">
-                    <h1 className="text-8xl pl-20 -mt-2">dads</h1>
-                    <h3 className="text-xl pl-20">
-                        Mais que uma agencia de comunicação, uma agencia de
-                        criação!
-                    </h3>
-                </div>
-                <div id="about" className=" w-full h-auto flex flex-col ">
-                    <div className="h-auto w-6/12 ml-20 mb-20">
-                        <h3 className="text-4xl">Quem somos</h3>
-                        <p className="p-4">
-                            Na vastidão digital, somos os arquitetos do sucesso,
-                            Criando sites que cativam, design que causa
-                            impressão. Marketing que amplifica, publicidade que
-                            alcança voos, Na trilha do crescimento, somos a sua
-                            direção.
-                        </p>
-                        <p className="p-4">
-                            Construímos pixels de inovação, onde cada detalhe
-                            conta, Transformamos ideias em visuais que encantam.
-                            Do código ao impacto, nossa missão é clara, Elevamos
-                            sua marca, enquanto o mercado se levanta.
-                        </p>
-                        <p className="p-4">
-                            Seja notado, seja lembrado, conquiste o olhar, Somos
-                            a ponte entre sonhos e a realidade a brilhar.
-                            Explore conosco o poder da visibilidade, Porque no
-                            mundo digital, sua história é nossa prioridade.
-                        </p>
-                    </div>
-                    <div className="w-full flex flex-col justify-center mx-auto">
-                        <h3 className="text-4xl flex justify-center mb-12">
-                            Valores
-                        </h3>
-                        <div className="flex flex-row justify-evenly  ">
-                            <div className="h-40 w-40 flex flex-col rounded-xl ">
-                                <div className="h-24 w-24 grid self-center bg-yellow-100 rounded-full">
-                                    <img
-                                        className="h-16  m-auto"
-                                        src={pencil}
-                                        alt=""
-                                    />
-                                </div>
-                                <h4 className="text-center my-auto">
-                                    Excelência Criativa
-                                </h4>
-                            </div>
-                            <div className="h-40 w-40 flex flex-col rounded-xl ">
-                                <div className="h-24 w-24 grid self-center bg-yellow-100 rounded-full">
-                                    <img
-                                        className="h-16  m-auto"
-                                        src={lamp}
-                                        alt=""
-                                    />
-                                </div>
-                                <h4 className="text-center my-auto">
-                                    Compromisso Inovador
-                                </h4>
-                            </div>
-                            <div className="h-40 w-40 flex flex-col rounded-xl ">
-                                <div className="h-24 w-24 grid self-center bg-yellow-100 rounded-full">
-                                    <img
-                                        className="h-16  m-auto"
-                                        src={trophy}
-                                        alt=""
-                                    />
-                                </div>
-                                <h4 className="text-center my-auto">
-                                    Orientação para o sucesso
-                                </h4>
-                            </div>
-                            <div className="h-40 w-40 flex flex-col rounded-xl ">
-                                <div className="h-24 w-24 grid self-center bg-yellow-100 rounded-full">
-                                    <img
-                                        className="h-16  m-auto"
-                                        src={exclamation}
-                                        alt=""
-                                    />
-                                </div>
-                                <h4 className="text-center my-auto">
-                                    Atenção Personalizada
-                                </h4>
-                            </div>
-                            <div className="h-40 w-40 flex flex-col rounded-xl ">
-                                <div className="h-24 w-24 grid self-center bg-yellow-100 rounded-full">
-                                    <img
-                                        className="h-16  m-auto"
-                                        src={flag}
-                                        alt=""
-                                    />
-                                </div>
-                                <h4 className="text-center my-auto">
-                                    Prioridade na Narrativa
-                                </h4>
-                            </div>
+        <div className=" h-screen w-screen absolute right-0 scroll-smooth ">
+            <Header />
+            <main className="relative z-0 mt-0">
+                <Home />
+                <About />
+                <Services />
 
-                            <div className="h-40 w-40 flex flex-col rounded-xl ">
-                                <div className="h-24 w-24 grid self-center bg-yellow-100 rounded-full">
-                                    <img
-                                        className="h-16  m-auto"
-                                        src={handshake}
-                                        alt=""
-                                    />
-                                </div>
-                                <h4 className="text-center my-auto">
-                                    Parceria Transparente
-                                </h4>
-                            </div>
-                            <div className="h-40 w-40 flex flex-col rounded-xl ">
-                                <div className="h-24 w-24 grid self-center bg-yellow-100 rounded-full">
-                                    <img
-                                        className="h-16  m-auto"
-                                        src={passionVisibility}
-                                        alt=""
-                                    />
-                                </div>
-                                <h4 className="text-center my-auto">
-                                    Paixão pela Visibilidade
-                                </h4>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div className="border-2 w-full h-auto" id="services">
-                    <h2>Serviços</h2>
-                    <div>
-                        <div>
-                            <img src="" alt="" />
-                            <p></p>
-                        </div>
-                        <div>
-                            <img src="" alt="" />
-                            <p></p>
-                        </div>
-                        <div>
-                            <img src="" alt="" />
-                            <p></p>
-                        </div>
-                        <div>
-                            <img src="" alt="" />
-                            <p></p>
-                        </div>
-                    </div>
-                </div>
-
-                <div>Portfólio</div>
-                <div>Clientes</div>
+                <Porfolio />
+                <Clients />
             </main>
-            <footer>
-                {/* redes sociais
-              mapa com o local 
-              contatos */}
+            <footer id="footer">
+                <div className="bg-lime-500 py-20 flex flex-row justify-around px-6">
+                    <div>
+                        <h3 className="text-3xl font-bold text-slate-700">
+                            Nossas redes sociais:
+                        </h3>
+                        <div className="flex flex-col justify-around gap-4 mt-20 ml-6">
+                            <a
+                                className="flex flex-row items-center text-black font-bold"
+                                href=""
+                            >
+                                <img
+                                    className="h-12 "
+                                    src={facebook}
+                                    alt=""
+                                    rel="noopener noreferrer"
+                                />
+                                <p className="ml-4 text-xl">/agenciadads</p>
+                            </a>
+                            <a
+                                className="flex flex-row items-center text-black font-bold"
+                                href=""
+                            >
+                                <img
+                                    className="h-12"
+                                    src={instagram}
+                                    alt=""
+                                    rel="noopener noreferrer"
+                                />
+                                <p className="ml-4 text-xl">/agenciadads</p>
+                            </a>
+                            <a
+                                className="flex flex-row items-center text-black font-bold"
+                                href=""
+                            >
+                                <img
+                                    className="h-12"
+                                    src={whatsapp}
+                                    alt=""
+                                    rel="noopener noreferrer"
+                                />
+                                <p className="ml-4 text-xl">(13) 3219 2113 </p>
+                            </a>
+                        </div>
+                    </div>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3645.840808235727!2d-46.32654428828029!3d-23.966068776497163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce03a9df27b443%3A0xa18bfa213e6032ad!2sAv.%20Conselheiro%20N%C3%A9bias%2C%20726%20-%20Boqueir%C3%A3o%2C%20Santos%20-%20SP%2C%2011045-002!5e0!3m2!1spt-BR!2sbr!4v1703903473895!5m2!1spt-BR!2sbr"
+                        loading="lazy"
+                        className="rounded-2xl ml-20 h-96 w-2/5 "
+                    ></iframe>
+                    <form className="flex flex-col ml-20 w-1/5 gap-2" action="">
+                        <input
+                            className="bg-slate-50 rounded-md h-8 pl-2 text-black"
+                            type="text"
+                            placeholder="Nome"
+                        />
+                        <input
+                            className="bg-slate-50 rounded-md h-8 pl-2 text-black"
+                            type="email"
+                            placeholder="Email"
+                        />
+                        <input
+                            className="bg-slate-50 rounded-md h-8 pl-2 text-black"
+                            type="text"
+                            placeholder="Assunto"
+                        />
+                        <input
+                            className="placeholder:text-gray-500 pb-[10rem] pl-2 bg-slate-50 rounded-md h-52 mb-2 text-black"
+                            type="text"
+                            placeholder="Mensagem"
+                        />
+                        <button
+                            className="border-2 border-slate-600"
+                            type="submit"
+                        >
+                            Enviar
+                        </button>
+                    </form>
+                </div>
             </footer>
         </div>
     );
