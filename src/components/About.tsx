@@ -16,8 +16,8 @@ export default function About() {
                 <h3 className="text-4xl font-bold mt-60">Quem somos</h3>
                 <p className="p-4 font-bold">
                     Na vastidão digital, somos os arquitetos do sucesso, Criando
-                    sites que cativam, design que causa impressão. Marketing que
-                    amplifica, publicidade que alcança voos, Na trilha do
+                    sites que cativam, design que causam impressão. Marketing
+                    que amplifica, publicidade que alcança voos, Na trilha do
                     crescimento, somos a sua direção.
                 </p>
                 <p className="p-4 font-bold">

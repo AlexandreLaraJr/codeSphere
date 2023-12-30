@@ -72,17 +72,17 @@ export default function App() {
                     ></iframe>
                     <form className="flex flex-col ml-20 w-1/5 gap-2" action="">
                         <input
-                            className="bg-slate-50 rounded-md h-8 pl-2 text-black"
+                            className="placeholder:text-gray-500 bg-slate-50 rounded-md h-8 pl-2 text-black"
                             type="text"
                             placeholder="Nome"
                         />
                         <input
-                            className="bg-slate-50 rounded-md h-8 pl-2 text-black"
+                            className="placeholder:text-gray-500 bg-slate-50 rounded-md h-8 pl-2 text-black"
                             type="email"
                             placeholder="Email"
                         />
                         <input
-                            className="bg-slate-50 rounded-md h-8 pl-2 text-black"
+                            className="placeholder:text-gray-500 bg-slate-50 rounded-md h-8 pl-2 text-black"
                             type="text"
                             placeholder="Assunto"
                         />
