@@ -10,10 +10,12 @@ export default function About() {
     return (
         <div
             id="about"
-            className=" w-full h-auto flex flex-col mt-22 bg-gradient-to-b from-transparent to-transparent via-slate-500 shadow-inner"
+            className=" w-screen h-auto flex flex-col mt-22 bg-gradient-to-b from-transparent to-transparent via-slate-500 shadow-inner"
         >
-            <div className="h-auto w-6/12 ml-20 -mt-12 mb-20">
-                <h3 className="text-4xl font-bold mt-60">Quem somos</h3>
+            <div className="h-auto md:w-6/12 md:ml-20 md:-mt-12 mb-20 md:mb-20">
+                <h3 className="text-4xl font-bold ml-4 md:ml-0 mt-40 md:mt-60">
+                    Quem somos
+                </h3>
                 <p className="p-4 font-bold">
                     Na vastidão digital, somos os arquitetos do sucesso, Criando
                     sites que cativam, design que causam impressão. Marketing
@@ -37,7 +39,7 @@ export default function About() {
                 <h3 className="text-4xl font-bold flex justify-center mb-12">
                     Nossos valores
                 </h3>
-                <div className="flex flex-row justify-evenly  ">
+                <div className="flex flex-row flex-wrap justify-evenly  ">
                     <div className="h-40 w-40 flex flex-col rounded-xl ">
                         <div className="transition duration-500 ease-in-out transform hover:scale-110 h-24 w-24 grid self-center bg-lime-500 rounded-full">
                             <img className="h-16  m-auto" src={pencil} alt="" />

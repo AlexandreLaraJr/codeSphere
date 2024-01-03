@@ -9,15 +9,15 @@ export default function Services() {
             className="grid grid-flow-row  w-auto h-auto mt-40 pb-20"
             id="services"
         >
-            <h3 className="text-4xl font-bold my-12 pt-32 mt-16 ml-20">
+            <h3 className="text-4xl font-bold my-12 pt-32 mt-16 ml-4 md:ml-20">
                 Serviços
             </h3>
-            <div className="flex flex-row ">
-                <p className="text-xl  font-bold w-2/6 ml-20 mt-20">
+            <div className="flex flex-col md:flex-row ">
+                <p className="text-xl font-bold w-11/12 mx-auto md:w-2/6 md:ml-20 md:mt-20">
                     Nos comprometemos em cada serviço, com inovação, atenção aos
                     detalhes e a orientação para o sucesso do cliente.
                 </p>
-                <div className="grid grid-cols-2 mx-auto gap-10 my-6">
+                <div className="flex flex-col w-11/12 md:grid md:grid-cols-2 mx-auto gap-10 my-6">
                     <div className=" h-64 w-auto relative group">
                         <img
                             className=" rounded-xl object-cover object-center w-full h-full group-hover:brightness-20 transition-all duration-500 ease-in-out"
