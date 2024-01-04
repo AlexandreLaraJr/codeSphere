@@ -11,9 +11,9 @@ export default function Header() {
     };
 
     return (
-        <header className=" fixed z-10 top-0 h-16 h-22 left-8 right-8 w-auto mt-10">
-            <nav className=" bg-white border-gray-200 dark:bg-gray-900 rounded-full">
-                <div className=" max-w-screen-xl flex flex-wrap items-center justify-between p-2 mx-auto md:p-4 ">
+        <header className=" fixed z-10 top-0 h-16 h-22 left-4 right-4 w-auto mt-10">
+            <nav className=" bg-slate-100 border-slate-100  rounded-full">
+                <div className=" max-w-screen-xl flex flex-wrap items-center justify-between p-2 mx-auto md:ml-0 md:p-4 ">
                     <div className="h-auto w-auto">
                         <a href="#home" className="text-white ">
                             <img
@@ -25,7 +25,7 @@ export default function Header() {
                     </div>
                     <button
                         type="button"
-                        className=" inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                        className=" inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-gray-200 "
                         onClick={toggleMenuHiden}
                     >
                         <svg
@@ -45,14 +45,15 @@ export default function Header() {
                         </svg>
                     </button>
                     <div
-                        className={`${menuClosed}  mt-80 mr-12 w-40 flex flex-row right-0 md:mt-0 md:mr-20 md:block md:w-auto`}
+                        className={`${menuClosed} mt-80 mr-12 w-40 flex flex-row right-0 md:mt-0 md:mr-20 md:block md:w-auto`}
                     >
-                        <ul className="font-medium flex flex-col p-4 md:p-0  border w-full border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                        <ul className="font-medium flex flex-col p-4 md:p-0  border w-full border-slate-100 rounded-lg bg-slate-100 md:flex-row md:space-x-8 rtl:space-x-reverse mt-6 md:mt-0 md:border-0 md:bg-slate-100  ">
                             <li>
                                 <a
                                     href="#home"
-                                    className="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
+                                    className="block py-2 px-3 text-gray-900 rounded  md:p-0 hover:text-lime-500"
                                     aria-current="page"
+                                    onClick={toggleMenuHiden}
                                 >
                                     Inicio
                                 </a>
@@ -60,7 +61,8 @@ export default function Header() {
                             <li>
                                 <a
                                     href="#about"
-                                    className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                                    className="block py-2 px-3 text-gray-900 rounded  md:p-0 hover:text-lime-500"
+                                    onClick={toggleMenuHiden}
                                 >
                                     Sobre
                                 </a>
@@ -68,7 +70,8 @@ export default function Header() {
                             <li>
                                 <a
                                     href="#services"
-                                    className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                                    className="block py-2 px-3 text-gray-900 rounded  md:p-0 hover:text-lime-500"
+                                    onClick={toggleMenuHiden}
                                 >
                                     Serviços
                                 </a>
@@ -76,7 +79,8 @@ export default function Header() {
                             <li>
                                 <a
                                     href="#portfolio"
-                                    className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                                    className="block py-2 px-3 text-gray-900 rounded  md:p-0 hover:text-lime-500"
+                                    onClick={toggleMenuHiden}
                                 >
                                     Portfólio
                                 </a>
@@ -84,9 +88,19 @@ export default function Header() {
                             <li>
                                 <a
                                     href="#clients"
-                                    className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                                    className="block py-2 px-3 text-gray-900 rounded  md:p-0 hover:text-lime-500"
+                                    onClick={toggleMenuHiden}
                                 >
                                     Clientes
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="#footer"
+                                    className="block py-2 px-3 text-white rounded-xl text-center md:-my-2 md:border-8 border-lime-500 bg-lime-500 md:p-0 hover:text-gray-900"
+                                    onClick={toggleMenuHiden}
+                                >
+                                    Contato
                                 </a>
                             </li>
                         </ul>

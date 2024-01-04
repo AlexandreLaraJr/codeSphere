@@ -10,10 +10,10 @@ export default function About() {
     return (
         <div
             id="about"
-            className=" w-screen h-auto flex flex-col mt-22 bg-gradient-to-b from-transparent to-transparent via-slate-500 shadow-inner"
+            className="w-screen h-auto flex flex-col  mt-40 bg-gradient-to-b from-transparent to-transparent via-slate-500 shadow-inner"
         >
-            <div className="h-auto md:w-6/12 md:ml-20 md:-mt-12 mb-20 md:mb-20">
-                <h3 className="text-4xl font-bold ml-4 md:ml-0 mt-40 md:mt-60">
+            <div className="h-auto md:w-6/12 md:ml-20 mt-3 md:-mt-12 mb-20">
+                <h3 className="text-4xl font-bold ml-4 md:ml-0 mt-44 md:mt-60">
                     Quem somos
                 </h3>
                 <p className="p-4 font-bold">
