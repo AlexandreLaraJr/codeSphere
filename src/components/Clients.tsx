@@ -19,7 +19,11 @@ export default function Clients() {
                 Clientes
             </h3>
             <div className="h-96 ">
-                <Carousel indicators={false}>
+                <Carousel
+                    indicators={false}
+                    leftControl={true}
+                    rightControl={true}
+                >
                     <img
                         className="h-auto w-auto transition duration-500 ease-in-out transform hover:scale-110"
                         src={actioncoach}

@@ -7,7 +7,7 @@ export default function Porfolio() {
                 Portfólio
             </h2>
             <p className="text-2xl mb-20 m-6 md:ml-20">
-                Alguns de nossos cases de sucesso.
+                Alguns dos nossos casos de sucesso.
             </p>
             <div className="flex flex-col md:flex-row gap-6  md:justify-around mx-2 md:mx-auto">
                 <div>

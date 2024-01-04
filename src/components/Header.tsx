@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { MouseEvent, useState } from "react";
 import dadsLogo from "../assets/images/dads.png";
 
 export default function Header() {
@@ -11,9 +11,9 @@ export default function Header() {
     };
 
     return (
-        <header className=" fixed z-10 top-0 h-16 h-22 left-4 right-4 w-auto mt-10">
+        <header className="fixed z-10 top-0 h-16 h-22 left-4 right-4 w-auto mt-10">
             <nav className=" bg-slate-100 border-slate-100  rounded-full">
-                <div className=" max-w-screen-xl flex flex-wrap items-center justify-between p-2 mx-auto md:ml-0 md:p-4 ">
+                <div className=" max-w-screen-xl md:max-w-full flex flex-wrap items-center justify-between md:w-full p-2 mx-auto md:mx-auto md:p-4 ">
                     <div className="h-auto w-auto">
                         <a href="#home" className="text-white ">
                             <img
@@ -45,7 +45,7 @@ export default function Header() {
                         </svg>
                     </button>
                     <div
-                        className={`${menuClosed} mt-80 mr-12 w-40 flex flex-row right-0 md:mt-0 md:mr-20 md:block md:w-auto`}
+                        className={`${menuClosed} mt-80 mr-12  w-40 flex flex-row self-end  right-0 md:mt-0 md:mr-20 md:block md:w-auto`}
                     >
                         <ul className="font-medium flex flex-col p-4 md:p-0  border w-full border-slate-100 rounded-lg bg-slate-100 md:flex-row md:space-x-8 rtl:space-x-reverse mt-6 md:mt-0 md:border-0 md:bg-slate-100  ">
                             <li>
@@ -53,7 +53,6 @@ export default function Header() {
                                     href="#home"
                                     className="block py-2 px-3 text-gray-900 rounded  md:p-0 hover:text-lime-500"
                                     aria-current="page"
-                                    onClick={toggleMenuHiden}
                                 >
                                     Inicio
                                 </a>
@@ -62,7 +61,6 @@ export default function Header() {
                                 <a
                                     href="#about"
                                     className="block py-2 px-3 text-gray-900 rounded  md:p-0 hover:text-lime-500"
-                                    onClick={toggleMenuHiden}
                                 >
                                     Sobre
                                 </a>
@@ -71,7 +69,6 @@ export default function Header() {
                                 <a
                                     href="#services"
                                     className="block py-2 px-3 text-gray-900 rounded  md:p-0 hover:text-lime-500"
-                                    onClick={toggleMenuHiden}
                                 >
                                     Serviços
                                 </a>
@@ -80,7 +77,6 @@ export default function Header() {
                                 <a
                                     href="#portfolio"
                                     className="block py-2 px-3 text-gray-900 rounded  md:p-0 hover:text-lime-500"
-                                    onClick={toggleMenuHiden}
                                 >
                                     Portfólio
                                 </a>
@@ -89,7 +85,6 @@ export default function Header() {
                                 <a
                                     href="#clients"
                                     className="block py-2 px-3 text-gray-900 rounded  md:p-0 hover:text-lime-500"
-                                    onClick={toggleMenuHiden}
                                 >
                                     Clientes
                                 </a>
@@ -98,7 +93,6 @@ export default function Header() {
                                 <a
                                     href="#footer"
                                     className="block py-2 px-3 text-white rounded-xl text-center md:-my-2 md:border-8 border-lime-500 bg-lime-500 md:p-0 hover:text-gray-900"
-                                    onClick={toggleMenuHiden}
                                 >
                                     Contato
                                 </a>

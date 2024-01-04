@@ -11,7 +11,7 @@ export default function Home() {
                 className="h-auto w-3/6 md:w-1/4 mb-4 md:mb-0 ml-8 md:mt-24 md:ml-20 -mt-2 "
             />
             <h3 className="text-2xl ml-8 md:ml-20">
-                Mais que uma agencia de comunicação, uma agencia de criação!
+                Mais do que uma agência de comunicação, uma agência de criação!
             </h3>
         </div>
     );
