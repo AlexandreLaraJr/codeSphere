@@ -1,4 +1,4 @@
-import { MouseEvent, useState } from "react";
+import { useState } from "react";
 import dadsLogo from "../assets/images/dads.png";
 
 export default function Header() {
