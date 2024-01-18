@@ -1,5 +1,4 @@
 import { useState } from "react";
-import dadsLogo from "../assets/images/dads.png";
 
 export default function Header() {
     const [menuClosed, setMenuClosed] = useState("hidden");
@@ -16,11 +15,9 @@ export default function Header() {
                 <div className=" max-w-screen-xl md:max-w-full flex flex-wrap items-center justify-between md:w-full p-2 mx-auto md:mx-auto md:p-4 ">
                     <div className="h-auto w-auto">
                         <a href="#home" className="text-white ">
-                            <img
-                                className=" ml-2  w-20 md:w-20"
-                                src={dadsLogo}
-                                alt=""
-                            />
+                            <h1 className="text-2xl font-bold text-lime-500 hover:text-lime-500 ml-4">
+                                CodeSphere
+                            </h1>
                         </a>
                     </div>
                     <button

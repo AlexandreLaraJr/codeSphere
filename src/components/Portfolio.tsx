@@ -1,4 +1,4 @@
-import sample from "../assets/images/portfolioImages/sample.jpg";
+import sample from "../assets/images/sample.jpg";
 
 export default function Porfolio() {
     return (

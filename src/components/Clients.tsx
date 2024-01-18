@@ -1,13 +1,5 @@
 import { Carousel } from "flowbite-react";
-import actioncoach from "../assets/images/clientsImages/actioncoach.png";
-import crego from "../assets/images/clientsImages/crego.png";
-import criaset from "../assets/images/clientsImages/criaset.png";
-import kombina from "../assets/images/clientsImages/kombina.png";
-import latina from "../assets/images/clientsImages/latina.png";
-import luizapossi from "../assets/images/clientsImages/luizapossi.png";
-import madalena from "../assets/images/clientsImages/madalena.png";
-import mercedes from "../assets/images/clientsImages/mercedes.png";
-import movesq from "../assets/images/clientsImages/movesq.png";
+import sample from "../assets/images/sample.jpg";
 
 export default function Clients() {
     return (
@@ -26,56 +18,23 @@ export default function Clients() {
                 >
                     <img
                         className="h-auto w-auto transition duration-500 ease-in-out transform hover:scale-110"
-                        src={actioncoach}
-                        alt="Action Coach"
+                        src={sample}
+                        alt="sample"
                     />
-
                     <img
                         className="h-auto w-auto transition duration-500 ease-in-out transform hover:scale-110"
-                        src={crego}
-                        alt="Crego"
+                        src={sample}
+                        alt="sample"
                     />
-
                     <img
                         className="h-auto w-auto transition duration-500 ease-in-out transform hover:scale-110"
-                        src={criaset}
-                        alt="CriAset"
+                        src={sample}
+                        alt="sample"
                     />
-
                     <img
                         className="h-auto w-auto transition duration-500 ease-in-out transform hover:scale-110"
-                        src={kombina}
-                        alt="Kombina"
-                    />
-
-                    <img
-                        className="h-auto w-auto transition duration-500 ease-in-out transform hover:scale-110"
-                        src={latina}
-                        alt="Latina"
-                    />
-
-                    <img
-                        className="h-auto w-auto transition duration-500 ease-in-out transform hover:scale-110"
-                        src={luizapossi}
-                        alt="Luiza Possi"
-                    />
-
-                    <img
-                        className="h-auto w-auto transition duration-500 ease-in-out transform hover:scale-110"
-                        src={madalena}
-                        alt="Madalena"
-                    />
-
-                    <img
-                        className="h-auto w-auto transition duration-500 ease-in-out transform hover:scale-110"
-                        src={mercedes}
-                        alt="Mercedes"
-                    />
-
-                    <img
-                        className="h-auto w-auto transition duration-500 ease-in-out transform hover:scale-110"
-                        src={movesq}
-                        alt="Move SQ"
+                        src={sample}
+                        alt="sample"
                     />
                 </Carousel>
             </div>
